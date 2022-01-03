@@ -1,0 +1,325 @@
+h1,
+span{
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.main__button{
+	background-color: rgba(60,60,255,255);
+	border-radius: 5px;
+	padding:20px 30px 20px 30px;
+}
+.main__button:hover{
+	background-color: rgba(0,0,255,255);
+}
+.block__link{
+	text-decoration: none;
+}
+.elems__horizontal__menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 70px;
+	position: realtive;
+}
+.menu__disney-logo__block,
+.menu__shop__block,
+.menu__movies__block,
+.menu__shows__block,
+.menu__parks__block,
+.menu__disneylife__block{
+	padding: 0px 10px 0px 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 50px;
+}
+/*vertical elems*/
+.elems, 
+.elems__first, 
+.elems__second{
+	position: realtive;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: 100%;
+	width: 100%;
+}
+.elems__first{
+	background-color: rgba(255,255,255,255);
+}
+.elems__second{
+	padding: 100px 0px;
+	background-color: rgba(220,220,220,255);
+}
+.elems__horizontal,
+/*halloween block*/
+.elems__main, 
+/*niger block*/
+.elems__main__small, 
+/*white girl block*/
+.elems__discover, 
+/*wallpaper block*/
+.elems__shop__small, 
+/*elems__shop__big block*/
+.elems__shop__big,
+/*sea block*/
+.elems__holidays,
+/*ralph*/
+.elems__movies,
+/*aladdin block*/
+.elems__book,
+/*start wars block*/
+.elems__more{
+    position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.elems__shop__small{
+	flex: 376 768 0px;
+}
+.elems__shop__big{
+	flex: 768 376 0px;
+}
+/*big space block*/
+.elems__big__space{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+/*small image*/
+.elems__img__small{
+	width: 150px;
+	height: auto;
+	padding-left: 5px;
+}
+/*usual image*/
+.elems__img,
+.elems__video{
+	background-color: rgba(0,0,0,255);
+	width: 100%;
+	height: auto;
+	display: block;
+}
+/*text block always under image*/
+.elems__subtext__block{
+	background-color: rgba(255,255,255,255);
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: realtive;
+	padding: 5px 20px 5px 20px;
+}
+/*text always under image*/
+.elems__subtext{
+	color: rgba(0,0,0,255);
+	position: realtive;
+	font-size: 15px;
+	left: 10px;
+}
+.elems__subtext__small{
+	color: rgba(0,0,0,255);
+	position: realtive;
+	font-size: 12px;
+	left: 10px;
+}
+/*addition text always at bottom and left*/
+.elems__subtext__under{
+	color: rgba(0,0,0,255);
+	position: absolute;
+	font-size: 10px;
+	left: 10px;
+	bottom: 10px;
+}
+/*big screen size*/
+@media only screen and (min-width: 600px){
+	.elems__horizontal,
+	.elems__horizontal__border{
+		position: realtive;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+	}
+	.elems__horizontal__border{
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.elems__text__block__main,
+	.elems__text__block__right,
+	.elems__text__block__left,
+	.elems__text__block__bottom{
+		background-color: rgba(255,255,255,0);
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		bottom: 0px;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+	}
+	.elems__text__block__right{
+		justify-content: center;
+		align-items: flex-end;
+		right: 10px;
+	}
+	.elems__text__block__main,
+	.elems__text__block__left{
+		justify-content: center;
+		align-items: flex-start;
+		left: 10px;
+	}
+	.elems__text__block__bottom{
+		justify-content: flex-end;
+		align-items: center;
+		bottom: 10px;
+	}
+	.elems__text{
+		position: realtive;
+		left: 10px;
+		font-size: 30px;
+	}
+	.elems__text__small{
+		position: realtive;
+		left: 10px;
+		font-size: 20px;
+	}
+	.elems__text__under{
+		position: realtive;
+		left: 10px;
+		font-size: 15px;
+	}
+	.block__link:hover .elems__text{
+		font-size: 33px;
+	}
+	.space__small__horizontal{
+		height: 20px;
+		min-height: 20px;
+	}
+	.space__small__vertical{
+		width: 20px;
+		min-width: 20px;
+	}
+	.white__text{
+		color: rgba(255,255,255,255);
+	}
+	.black__text{
+		color: rgba(0,0,0,255);
+	}
+	.elems__big-space{
+		height: 100px;
+		min-height: 100px;
+	}
+}
+/*small screen size*/
+@media only screen and (max-width: 600px){
+	.menu__disney-logo__block,
+	.menu__shop__block,
+	.menu__movies__block,
+	.menu__shows__block,
+	.menu__parks__block,
+	.menu__disneylife__block{
+		border-bottom: rgba(0,0,0,255) 2px solid;
+	}
+	.elems__horizontal,
+	.elems__horizontal__border{
+		position: realtive;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		height: 100%;
+	}
+	.elems__horizontal__border{
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-bottom: 30px;
+	}
+	.elems__text__block__main,
+	.elems__text__block__right,
+	.elems__text__block__left,
+	.elems__text__block__bottom{
+		background-color: rgba(255,255,255,255);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		position: realtive;
+	}
+	.elems__text__block__right,
+	.elems__text__block__left,
+	.elems__text__block__bottom{
+		height: 150px;
+	}
+	.elems__text__block__main{
+		height: 200px;
+	}
+	.elems__text{
+		position: realtive;
+		left: 10px;
+		font-size: 25px;
+	}
+	.elems__text__small{
+		position: realtive;
+		left: 10px;
+		font-size: 20px;
+	}
+	.elems__text__under{
+		position: absolute;
+		bottom: 10px;
+		font-size: 15px;
+	}
+	.space__small__horizontal{
+		height: 0px;
+		min-height: 0px;
+	}
+	.space__small__vertical{
+		width: 0px;
+		min-width: 0px;
+	}
+	.white__text{
+		color: rgba(0,0,0,255);
+	}
+	.black__text{
+		color: rgba(0,0,0,255);
+	}
+	.elems__big-space{
+		height: 0px;
+		min-width: 0px;
+	}
+}
+/*bigger than middle*/
+@media only screen and (min-width: 800px){
+	.elems__800{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		height: 100%;
+	}
+	.elems__space__800__vertical{
+		width: 20px;
+		min-width: 20px;
+	}
+}
+/*smaller than middle*/
+@media only screen and (max-width: 800px){
+	.elems__800{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		height: 100%;
+	}
+	.elems__space__800__vertical{
+		width: 0px;
+		min-width: 0px;
+	}
+}
